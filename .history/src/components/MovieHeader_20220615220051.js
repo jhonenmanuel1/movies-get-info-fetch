@@ -6,12 +6,12 @@ export default function MovieHeader(props) {
     < >
       <div className="container-header">
       <div className="wraper-header">
-      <h1 className="text-title">Movies App</h1>
+      <h1>Movies App</h1>
         <SearchBox
           searchItem={props.searchItem}
           setSearchItem={props.setSearchItem}
         />
-        <h2 className="text-title">By Jhon Santiago</h2>
+        <h2>By Jhon Santiago</h2>
 
       </div>
        

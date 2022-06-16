@@ -34,7 +34,7 @@ function App() {
   return (
     <>
     <div>
-      <MovieHeader searchItem={searchItem} setSearchItem={setSearchItem}/>
+      <MovieHeader
 
     </div>
     <div>

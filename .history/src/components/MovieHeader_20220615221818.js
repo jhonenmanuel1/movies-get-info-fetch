@@ -11,7 +11,7 @@ export default function MovieHeader(props) {
           searchItem={props.searchItem}
           setSearchItem={props.setSearchItem}
         />
-        <h2 className="text-title">By Jhon Santiago</h2>
+        <h2 className="text">By Jhon Santiago</h2>
 
       </div>
        
