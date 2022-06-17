@@ -1,10 +1,5 @@
-.moviecard-wraper {
-  display: flex;
-  overflow-x: scroll;
- 
-  max-width: 500px;
-}
 
+.moviecard-wraper::-webkit-scrollbar {    display: none;}
 
 .item-moviecard {
   padding: 5px;

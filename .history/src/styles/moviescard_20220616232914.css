@@ -1,10 +1,7 @@
 .moviecard-wraper {
   display: flex;
-  overflow-x: scroll;
- 
-  max-width: 500px;
+  overflow-x: auto;
 }
-
 
 .item-moviecard {
   padding: 5px;

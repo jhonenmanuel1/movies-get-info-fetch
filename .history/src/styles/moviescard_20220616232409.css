@@ -1,0 +1,7 @@
+.moviecard-wraper {
+  display: flex;
+}
+
+.item-moviecard {
+  padding: 5px;
+}

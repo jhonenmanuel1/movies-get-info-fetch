@@ -1,0 +1,10 @@
+.moviecard-wraper{
+    display: flex;
+}
+
+.item-moviecard{
+    padding: 5px;
+    border-radius: 20px;
+    
+
+}

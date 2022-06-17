@@ -1,7 +1,8 @@
 .moviecard-wraper {
   display: flex;
-  overflow-x: scroll;
- 
+  overflow-y: auto;
+  scroll-behavior: auto;
+  scroll-snap-type: x proximity;
   max-width: 500px;
 }
 

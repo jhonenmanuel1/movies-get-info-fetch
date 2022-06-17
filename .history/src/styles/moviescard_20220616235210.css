@@ -1,8 +1,6 @@
 .moviecard-wraper {
   display: flex;
-  overflow-x: scroll;
- 
-  max-width: 500px;
+  overflow-y: auto;
 }
 
 
