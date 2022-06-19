@@ -1,0 +1,12 @@
+.moviecard-wraper {
+  display: flex;
+  overflow-x: scroll;
+}
+
+
+.item-moviecard {
+  padding: 5px;
+}
+.item-moviecard img {
+    border-radius: 10px;
+}

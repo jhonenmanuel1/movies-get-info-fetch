@@ -1,12 +1,16 @@
-import "../styles/searchbox.css";
+import React from 'react';
 
+const SearchBox = (props) => {
+	return (
+		<div className='col col-sm-4'>
+			<input
+				className='form-control'
+				value={props.value}
+				onChange={(event) => props.setSearchValue(event.target.value)}
+				placeholder='Type to search...'
+			></input>
+		</div>
+	);
+};
 
-export default function SearchBox(props){
-    return<>
-        <input
-        className="search-input"
-        value={props.value}
-        onChange={(event)=> props.setSearchItem(event.target.value)}
-         placeholder="Search Movie"></input>
-    </>
-}
+export default SearchBox;
