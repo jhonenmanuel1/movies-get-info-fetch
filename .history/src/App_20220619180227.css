@@ -1,0 +1,16 @@
+body {
+    background:#141414 ;
+    color:#ffff
+}
+.movie-app{
+    display: flex;
+    margin: 0;
+}
+
+.movie-app > .row {
+   
+    overflow-x:  auto;
+    flex-wrap: nowrap;
+    
+
+}

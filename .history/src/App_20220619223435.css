@@ -1,0 +1,18 @@
+body {
+    background:#141414 ;
+    color:#ffff
+}
+.movie-app{
+    
+}
+
+.movie-app > .list {
+    display: flex;
+    overflow-x:  scroll;
+    flex-wrap: nowrap;
+    
+
+}
+.image-container{
+    position: relative;
+}

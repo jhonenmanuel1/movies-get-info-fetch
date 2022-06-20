@@ -1,0 +1,16 @@
+body {
+    background:#141414 ;
+    color:#ffff
+}
+.movie-app{
+    display: flex;
+}
+
+.movie-app > .list {
+    display: flex;
+   
+    overflow-x:  auto;
+    flex-wrap: nowrap;
+    
+
+}

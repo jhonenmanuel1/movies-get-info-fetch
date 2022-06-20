@@ -30,8 +30,7 @@ if(responseJson.Search){
 
  const addFavourite=(movie)=>{
 
-  const newFavouriteList =[...favourites, movie];
-  setFavourites(newFavouriteList)
+  const newFavouriteList =[...favourites, movie]
 
   
  }

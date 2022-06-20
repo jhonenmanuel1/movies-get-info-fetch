@@ -24,7 +24,6 @@ body {
 }
 .image-container:hover .overlay{
     opacity: 1;
-    
 }
 .overlay{
     position: absolute;

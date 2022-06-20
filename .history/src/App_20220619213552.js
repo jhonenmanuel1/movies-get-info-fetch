@@ -3,53 +3,35 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import'./App.css';
 import MovieList from "./components/MoviesList";
 import MovieListHeading from "./components/MovieListHeading";
-import SearchBox from "./components/SearchBox";
-import AddFavourite from "./components/AddFavorites";
 
 const App = () => {
   const [movies, setMovies] = useState([]);
   const [search, setSearch] = useState('');
-  const [favourites, setFavourites]= useState([])
 
-  const getMovies = async (search) => {
-    const url = `http://www.omdbapi.com/?s=${search}&apikey=263d22d8`;
+  const getMovies = async () => {
+    const url = `http://www.omdbapi.com/?s=$ari&apikey=263d22d8`;
     const response = await  fetch(url);
     const responseJson = await response.json();
     console.log(responseJson);
-
-if(responseJson.Search){
     setMovies(responseJson.Search);
-
-}
-   
     
   }
  useEffect(()=>{
-    getMovies(search);
- }, [search]);
-
- const addFavourite=(movie)=>{
-
-  const newFavouriteList =[...favourites, movie];
-  setFavourites(newFavouriteList)
-
-  
- }
-
+    getMovies();
+ }, []);
   return (
     <>
     
       <div className="container-fluid movie-app">
-      <div className="row d-flex align-items-center mt-2 mb-4" >
-        <MovieListHeading heading="Movies Jhon"/>
-        <SearchBox searchValue={search} setSearchValue={setSearch}/>
+      <div className="row">
+        <MovieListHeading heading="Movies"/>
       <div>
         
       </div>
 
       </div>
         <div className="list ">
-        <MovieList movies={movies} handlesFavouriteClick={addFavourite} favouriteComponent={AddFavourite}/>
+        <MovieList movies={movies}/>
 
         </div>
         
