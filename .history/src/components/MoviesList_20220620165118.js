@@ -7,10 +7,8 @@ export default function MovieList(props) {
       {props.movies.map((movie, index) => (
         <div   className="image-container d-flec justify-content-start m-3">
           <img key={index} src={movie?.Poster} alt="See Movies Poster"></img>
-          <div onClick={()=>props.handlesFavouriteClick(movie)} className="overlay d-flex align-items-center justify-content-center align-items-center">
-          <FavouriteComponent/>
-          </div>
-            
+          <div onClick={()=>props.handlesFavouriteClick(movie)} className="overlay d-flex align-items-center justify-content-center align-items-center"></div>
+            <FavouriteComponent/>
         </div>
       ))}
     </>

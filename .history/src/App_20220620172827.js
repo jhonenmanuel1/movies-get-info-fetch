@@ -44,8 +44,7 @@ const App = () => {
      const newFavouriteList = favourites.filter(
       (favourite)=>favourite.imdbID !== movie.imdbID
      );
-     setFavourites(newFavouriteList);
-     saveToLocalStorage(newFavouriteList);
+     setFavourites(newFavouriteList)
 
   }
 
